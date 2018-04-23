@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uitest">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 百度地图AK -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="C2eYVWfYkgbFAfTm60O8f2i782TPdu0T" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ComponentActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".DBTest.DBTestActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".HandlerTest.HandlerTestActivity" />
+        <activity android:name=".HandlerTest.HandlerDemoActivity" />
+        <activity android:name=".BaiDuLocation.BDLocationActivity" />
+        <activity android:name=".MVP.view.LoginActivity" />
+
+        <!-- 地图定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".Material_Design.MaterialTestActivity" />
+        <activity
+            android:name=".Material_Design.FruitActivity"
+            android:theme="@style/FruitActivityTheme" />
+        <activity android:name=".OkhttpUtils.OkhttpActivity" />
+        <activity android:name=".NavigationBar.OneNavigationBar.ButtonNavigationBarActivity" />
+        <activity android:name=".NavigationBar.TwoNavigationBar.TwoNavigationBarActivity" />
+        <activity android:name=".TablayoutAddViewPager.TabaddViewActivity" />
+        <activity android:name=".EventBusTest.EventBusActivity" />
+        <activity android:name=".EventBusTest.EventBusTestActivity" />
+        <activity android:name=".Notificationtest.NotificationTest" />
+        <activity android:name=".Notificationtest.NotificationActivity" />
+        <activity android:name=".Networktest.NetworkTestActivity" />
+        <activity android:name=".Litepaltest.LitepalTestActivity" />
+        <activity android:name=".Signin.SigninActivity" />
+        <activity android:name=".PlayAudiotest.PlayAudioActivity" />
+        <activity android:name=".playvideotest.PlayVideActivity" />
+        <activity android:name=".RetrofitTest.GetRequest" />
+        <activity android:name=".RetrofitTest.PostRequest" />
+        <activity android:name=".RxJavaTest.RxjavaBeanActivity" />
+        <activity android:name=".RxJavaTest.RxJavafixRxjava" />
+        <activity android:name=".RxJavaTest.RxJavaChange" />
+        <activity android:name=".VolleyTest.VolleyActivity" />
+        <activity android:name=".HenCoder.HenCoderActivity"></activity>
+    </application>
+
+</manifest>

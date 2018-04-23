@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.uitest.TablayoutAddViewPager.TabaddViewActivity">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/mTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f6f6f1"
+            app:tl_iconGravity="TOP"
+            app:tl_iconHeight="25dp"
+            app:tl_iconWidth="30dp"
+            app:tl_indicator_color="@color/colorwhite"
+            app:tl_textSelectColor="@color/colorPrimary"
+            app:tl_textUnselectColor="@color/colorAccent"
+            app:tl_textsize="13sp">
+
+        </com.flyco.tablayout.CommonTabLayout>
+</RelativeLayout>
+

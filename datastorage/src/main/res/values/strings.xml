@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DataStorage</string>
+    <string name="EditText_key">输入保存的账号</string>
+    <string name="EditText_value">输入保存的密码</string>
+    <string name="Button_save">保存</string>
+    <string name="Button_read">读取</string>
+</resources>

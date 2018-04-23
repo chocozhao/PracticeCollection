@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidThreadTest/AndroidThreadTest.iml" filepath="$PROJECT_DIR$/AndroidThreadTest/AndroidThreadTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OkHttpUtils-master/OkHttpUtils-master.iml" filepath="$PROJECT_DIR$/OkHttpUtils-master/OkHttpUtils-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OkhttpTest/OkhttpTest.iml" filepath="$PROJECT_DIR$/OkhttpTest/OkhttpTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceBestPractice/ServiceBestPractice.iml" filepath="$PROJECT_DIR$/ServiceBestPractice/ServiceBestPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uitest/Uitest.iml" filepath="$PROJECT_DIR$/Uitest/Uitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcastbestpractice/broadcastbestpractice.iml" filepath="$PROJECT_DIR$/broadcastbestpractice/broadcastbestpractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cameraalbumtest/cameraalbumtest.iml" filepath="$PROJECT_DIR$/cameraalbumtest/cameraalbumtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contactstest/contactstest.iml" filepath="$PROJECT_DIR$/contactstest/contactstest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/databasetest/databasetest.iml" filepath="$PROJECT_DIR$/databasetest/databasetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastorage/datastorage.iml" filepath="$PROJECT_DIR$/datastorage/datastorage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filepersistencetest/filepersistencetest.iml" filepath="$PROJECT_DIR$/filepersistencetest/filepersistencetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttpserver/okhttpserver.iml" filepath="$PROJECT_DIR$/okhttpserver/okhttpserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttputils/okhttputils.iml" filepath="$PROJECT_DIR$/okhttputils/okhttputils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttputils_library/okhttputils_library.iml" filepath="$PROJECT_DIR$/okhttputils_library/okhttputils_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/providertest/providertest.iml" filepath="$PROJECT_DIR$/providertest/providertest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtimepermissiontest/runtimepermissiontest.iml" filepath="$PROJECT_DIR$/runtimepermissiontest/runtimepermissiontest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-okhttp/sample-okhttp.iml" filepath="$PROJECT_DIR$/sample-okhttp/sample-okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharepreferencestest/sharepreferencestest.iml" filepath="$PROJECT_DIR$/sharepreferencestest/sharepreferencestest.iml" />
+    </modules>
+  </component>
+</project>

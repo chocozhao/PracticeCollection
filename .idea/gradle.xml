@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AndroidThreadTest" />
+            <option value="$PROJECT_DIR$/OkHttpUtils-master" />
+            <option value="$PROJECT_DIR$/OkhttpTest" />
+            <option value="$PROJECT_DIR$/ServiceBestPractice" />
+            <option value="$PROJECT_DIR$/Uitest" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/broadcastbestpractice" />
+            <option value="$PROJECT_DIR$/cameraalbumtest" />
+            <option value="$PROJECT_DIR$/contactstest" />
+            <option value="$PROJECT_DIR$/databasetest" />
+            <option value="$PROJECT_DIR$/datastorage" />
+            <option value="$PROJECT_DIR$/filepersistencetest" />
+            <option value="$PROJECT_DIR$/okhttpserver" />
+            <option value="$PROJECT_DIR$/okhttputils" />
+            <option value="$PROJECT_DIR$/okhttputils_library" />
+            <option value="$PROJECT_DIR$/providertest" />
+            <option value="$PROJECT_DIR$/runtimepermissiontest" />
+            <option value="$PROJECT_DIR$/sample-okhttp" />
+            <option value="$PROJECT_DIR$/sharepreferencestest" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

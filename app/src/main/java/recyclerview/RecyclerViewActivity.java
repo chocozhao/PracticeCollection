@@ -1,0 +1,108 @@
+package recyclerview;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.myapplication.R;
+import java.util.ArrayList;
+
+/**
+ * Created by 赵泳霖 on 2017/8/3.
+ */
+
+public class RecyclerViewActivity extends Activity implements View.OnClickListener {
+    private Button btn_add;
+    private Button btn_delete;
+    private Button btn_list;
+    private Button btn_grid;
+    private Button btn_flow;
+    private RecyclerView recyclerview;
+    private TextView tv_title;
+
+    private ArrayList<String> datas;
+    private MyRecyclerViewAdapter adapter;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initView();
+
+        initData();
+        //设置RecyclerView的适配器
+       adapter = new MyRecyclerViewAdapter(RecyclerViewActivity.this,datas);
+        recyclerview.setAdapter(adapter);
+
+        //LayoutManager
+        recyclerview.setLayoutManager(new LinearLayoutManager(RecyclerViewActivity.this,
+                LinearLayoutManager.VERTICAL,false));
+        adapter.setOnItemClickListener(new MyRecyclerViewAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, String data) {
+                Toast.makeText(RecyclerViewActivity.this,"data=="+data,Toast.LENGTH_SHORT).show();
+            }
+        });
+        //设置自带的动画
+        recyclerview.setItemAnimator(new DefaultItemAnimator());
+
+    }
+
+    private void initView() {
+        setContentView(R.layout.activity_recyclerview);
+
+        btn_add = (Button) findViewById(R.id.btn_add);
+        btn_delete = (Button) findViewById(R.id.btn_delete);
+        btn_list = (Button) findViewById(R.id.btn_list);
+        btn_grid = (Button) findViewById(R.id.btn_grid);
+        btn_flow = (Button) findViewById(R.id.btn_flow);
+        recyclerview = (RecyclerView)findViewById(R.id.recyclerview);
+        tv_title = (TextView) findViewById(R.id.title_title);
+        tv_title.setText("RecyclerView");
+
+        btn_add.setOnClickListener(this);
+        btn_delete.setOnClickListener(this);
+        btn_list.setOnClickListener(this);
+        btn_grid.setOnClickListener(this);
+        btn_flow.setOnClickListener(this);
+    }
+
+   private void initData() {
+        datas = new ArrayList<>();
+        for (int i = 0;i<100;i++) {
+            datas.add("Content_"+i);
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.btn_add:
+                adapter.addData(0, "New_Content");
+                recyclerview.scrollToPosition(0);
+                break;
+            case R.id.btn_delete:
+                adapter.removeData(0);
+                break;
+            case R.id.btn_list:
+                //设置List类型效果
+                recyclerview.setLayoutManager(new LinearLayoutManager(RecyclerViewActivity.this,
+                        LinearLayoutManager.VERTICAL,false));
+                break;
+            case R.id.btn_grid:
+                //设置Grid类型效果
+                recyclerview.setLayoutManager(new GridLayoutManager(RecyclerViewActivity.this,3,GridLayoutManager.HORIZONTAL,false));
+                break;
+            case R.id.btn_flow:
+                //设置Flow类型效果
+                recyclerview.setLayoutManager(new StaggeredGridLayoutManager(5,StaggeredGridLayoutManager.VERTICAL));
+                break;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:onClick="showAD"
+        android:textAllCaps="false"
+        android:text="显示一般AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="showBD"
+        android:textAllCaps="false"
+        android:text="显示单选列表AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="showCD"
+        android:textAllCaps="false"
+        android:text="显示自定义AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:onClick="showPD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <Button
+            android:onClick="showPD"
+            android:textAllCaps="false"
+            android:text="显示圆形进度ProgressDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="showPDTwo"
+            android:textAllCaps="false"
+            android:text="显示水平进度ProgressDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+    <Button
+        android:onClick="showDataAD"
+        android:textAllCaps="false"
+        android:text="显示DateAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="showTimeAD"
+        android:textAllCaps="false"
+        android:text="显示TimeAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
